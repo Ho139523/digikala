@@ -1,11 +1,951 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Page</title>
-</head>
-<body>
-    <h1>hello world!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'shop/css/main.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'shop/Web/css/all.min.css' %}">
+  </head>
+  <body>
+   <img src ="{% static 'shop/aks/meno.webp' %}" alt="" class="meno">
+    <div class="dad">
+      <div class="mana1"> <div class="logo"><img src="{% static 'shop/aks/svg' %}" alt=""></div></div>
+      <div class="mana2">
+        <a href="#">
+          <p>ثبت نام</p>
+
+         <p class="left">ورود</p>
+         <img src="{% static 'shop/aks/svgexport-6.svg' %}" alt="">
+        </a>
+        <img src="{% static 'shop/aks/svgexport-7.svg' %}" alt="">
+       </div>
+      <div class="mana3"></div>
+      <div class="mana5"><label for="search">
+        <input type="text"
+        name="search"
+        id="search"
+        >
+      </label><div class="search">جستجو</div>
+
+        <div class="logo3">
+          <span class="fa-solid fa-magnifying-glass"></span> </div></div>
+      <div class="mana4"> <img src="{% static 'shop/aks/svgexport-2.svg' %}" alt=""></div>
+    </div>
+    <div class="help"><a href="#"><img src="{% static 'shop/aks/svgexport-55.svg' %}" alt=""> </a></div>
+<div class="menoo1">
+  <nav>
+    <ul>
+      <li><a href="#" class="a2"> لطفا شهر خود را انتخاب نمایید <img src="{% static 'shop/aks/svgexport-14.svg' %}" alt=""></a>
+
+      </li>
+      <li><a href="#"><p class="hre5">در دیجیکالا بفروشید! </p></a></li>
+      <li><a href="#"><p class="hre4">سوالی دارید؟</p></a></li>
+      <li><a href="#"><p class="p">پرفروش ترین ها <img src="{% static 'shop/aks/svgexport-12.svg' %}" alt=""></p></a></li>
+      <li><a href="#"><p class="hre3">کارت هد یه <img src="{% static 'shop/aks/svgexport-11.svg' %}" alt=""></p></a></li>
+      <li><a href="#"><p class="hre2">سوپر مارکت <img src="{% static 'shop/aks/svgexport-10.svg' %}" alt=""></p></a></li>
+      <li><a href="#"><p class="hre">شگفت انگیز ها <img src="{% static 'shop/aks/svgexport-9.svg' %}" alt=""></p></a></li>
+    <li><a class="href" href="#">دسته بندی کالاها <img src="{% static 'shop/aks/svgexport-8.svg' %}" alt=""></a>
+      <div class="submeno"><div class="content">
+
+     <div class="left">
+      <a href="#"><h2>محصولات بومی</h2></a>
+      <a href="#"><h2> خودرو و موتور سیکلت </h2></a>
+      <a href="#"><h2> ابزار آلات و تجهیزات</h2> </a>
+      <a href="#"><h2> سفر و ورزش</h2> </a>
+      <a href="#"><h2> زیبایی و سلامت</h2> </a>
+      <a href="#"><h2> اسباب بازی , کودک و نوزاد</h2></a>
+      <a href="#"><h2> کتاب ,لوازم التحریر و هنر</h2></a>
+      <a href="#"><h2>کالاهای سوپر مارکتی</h2></a>
+      <a href="#"><h2>مد و پوشاک</h2></a>
+      <a href="#"><h2>خانه و آشپز خانه</h2></a>
+      <a href="#"><h2>کالای دیجیتال</h2></a>
+      <a href="#"> <h2>موبایل </h2> </a><hr>
+    </div>
+     <div class="center"><h2> همه محصولات موبایل <span class="fa-solid fa-angle-left"></span></h2> <br><br><br><br>
+      <h3 class="berand">برند های مختلف گوشی موبایل<span class="fa-solid fa-angle-left"></span></h3><hr><div class="mobile">
+        <h6>گوشی  اپل </h6>
+        <h6>گوشی  سامسونگ</h6>
+        <h6>گوشی  شیامی</h6>
+        <h6>گوشی  نوکیا</h6>
+        <h6>گوشی  هواوی</h6>
+        <h6>گوشی  آنر</h6>
+        <h6>گوشی  آنر</h6>
+        <h6>گوشی   موتورولا</h6>
+        <h6>گوشی  ریلمی</h6>
+        <h6>گوشی  ناتینگ</h6>
+        <h6>گوشی  ارد</h6>
+        <h6>گوشی  جی پلاس</h6>
+        <h6>گوشی  وان پلاس</h6>
+        <h6>گوشی  جی ال ابکس</h6>
+      </div>
+    </div>
+     <div class="center2"> <h2>گوشی بر اساس قیمت
+      <span class="fa-solid fa-angle-left"></span></h2><hr>
+      <div class="gheimat">
+        <h6>گوشی تا بالای پانزده میلیون تومان</h6>
+         <h6>گوشی تا پانزده میلیون تومان</h6>
+         <h6>گوشی تا هفت میلیون تومان</h6>
+         <h6>گوشی تا پنج میلیون تومان</h6>
+        <h6>گوشی تا دو میلیون تومان</h6>
+      </div>
+      <div class="ram">
+       <h2> گوشی بر اساس حافظه داخلی <span class="fa-solid fa-angle-left"></span></h2>
+      </div>
+      <div class="ramc">
+        <h6>گوشی تا 1 ترابایت</h6>
+        <h6>گوشی تا 256  گیگ</h6>
+        <h6>گوشی تا 128 گیگ</h6>
+        <h6>گوشی تا 32 گیگ</h6>
+        <h6>گوشی تا 16 گیگ</h6>
+      </div>
+      <hr class="hr3">
+      <h2 class="aks">رزولوشن عکس <span class="fa-solid fa-angle-left"></span></h2><hr class="hr2">
+      <div class="aks">
+        <h6>تا 13 مگاپیکسل</h6>
+        <h6>تا 13 مگاپیکسل</h6>
+        <h6>تا 13 مگاپیکسل</h6>
+        <h6>تا 13 مگاپیکسل</h6>
+        <h6>تا 13 مگاپیکسل</h6>
+        <h6>تا 13 مگاپیکسل</h6>
+      </div>
+    </div>
+     <div class="right2"> <h2>گوشی بر اساس کاربری <span class="fa-solid fa-angle-left"></span></h2>
+      <hr class="hr4">
+      <div class="aks">
+        <h6>تا 108 مگاپیکسل</h6>
+        <h6>تا 64 مگاپیکسل</h6>
+        <h6>تا 32 مگاپیکسل</h6>
+        <h6>تا 16 مگاپیکسل</h6>
+        <h6>تا 13 مگاپیکسل</h6>
+
+      </div>
+      <div class="sim">
+        <h6>گوشی مناسب 5G</h6>
+        <h6>گوشی مناسب عکاسی</h6>
+        <h6>گوشی ضد آب</h6>
+        <h6>گوشی پرچم دار</h6>
+        <h6>گوشی گیمینگ</h6>
+        <h6>گوشی دانش آموزی</h6>
+        <h6>گوشی میان رده</h6>
+        <h6>گوشی اقتصادی</h6>
+
+      </div>
+    </div>
+
+     <div class="right"><h6>دو سیم کارت</h6>
+      <h6>دو سیم کارت</h6>
+      <h6>android.(اندرویند)</h6>
+      <h6>LOS</h6>
+      <h6>سایر سیستم عامل ها</h6>
+
+
+    </div>
+    </div></li></div>
+
+      </div>
+      </li>
+    </ul>
+  </nav>
+
+
+
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="{% static 'shop/aks/5s.webp' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'shop/aks/2s.webp' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'shop/aks/3s.webp' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'shop/aks/6s.webp' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'shop/aks/swi.gif' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'shop/aks/swi2.webp' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'shop/aks/4s.webp' %}" alt="">
+      </div>
+      <div class="swiper-slide"><img src="{% static 'shop/aks/7s.gif' %}" alt=""></div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+    <div class="t">
+      <div class="t1"><a href="#"><img src="{% static 'shop/aks/jt.png' %}" alt=""></a><h4>دیجیکالا جت</h4></div>
+      <div class="t2"><a href="#"><img src="{% static 'shop/aks/sta.png' %}" alt=""></a><h4>حراج استایل</h4></div>
+      <div class="t3"><a href="#"><img src="{% static 'shop/aks/dgpp.png' %}" alt=""></a><h4>دیجی پی</h4></div>
+      <div class="t4"><a href="#"><img src="{% static 'shop/aks/lab.png' %}" alt=""></a><h4>خرید عمده و سازمانی</h4></div>
+      <div class="t5"><a href="#"><img src="{% static 'shop/aks/takh.png' %}" alt=""></a> <h4> این طرف بازار</h4></div>
+      <div class="t6"><a href="#"><img src="{% static 'shop/aks/man.png' %}" alt=""></a><h4> منو دیجیکالا</h4></div>
+      <div class="t7"><a href="#"><img src="{% static 'shop/aks/game.png' %}" alt=""></a><h4 >گیم نت</h4></div>
+      <div class="t8"><a href="#"><p>...</p></a><h4> بیشتر </h4></div>
+    </div>
+
+     <!-- Swiper -->
+     <section class="shgeft">
+  <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide pishn">
+        <img src="{% static 'shop/aks/svgexport-21.svg' %}" alt="" class="pishn">
+        <img src="{% static 'shop/aks/pishn.webp' %}" alt="" class="pishn">
+        <br>
+        <a href="#">مشاهده همه</a><img src="{% static 'shop/aks/svgexport-22.svg' %}" alt="" class="pish">
+       </div>
+      <div class="swiper-slide star"><img src="{% static 'shop/aks/sh1.webp' %}" alt=""><div class="contact">
+        <div class="pra">
+        <img src="{% static 'shop/aks/svgexport-24.svg' %}" alt="">
+        <h4>573,000</h4>
+      </div>
+        <span>20%</span>
+      </div><h5>610,000</h5></div>
+      <div class="swiper-slide"><img src="./aks/sh2.webp" alt=""><div class="contact">
+        <div class="pra">
+        <img src="{% static 'shop/aks/svgexport-24.svg' %}" alt="">
+        <h4>360,000</h4>
+      </div>
+        <span>63%</span>
+      </div><h5>710,000</h5></div>
+
+      <div class="swiper-slide"><img src="{% static 'shop/aks/sh3.webp' %}" alt=""><div class="contact">
+        <div class="pra">
+        <img src="{% static 'shop/aks/svgexport-24.svg' %}" alt="">
+        <h4>2,490,000</h4>
+      </div>
+        <span>10%</span>
+      </div><h5>2,510,000</h5></div>
+
+      <div class="swiper-slide"><img src="{% static 'shop/aks/sh4.webp' %}" alt=""><div class="contact">
+        <div class="pra">
+        <img src="{% static 'shop/aks/svgexport-24.svg' %}" alt="">
+        <h4>3,680,000</h4>
+      </div>
+        <span>4%</span>
+      </div><h5>3,700,000</h5></div>
+      <div class="swiper-slide"><img src="{% static 'shop/aks/sh5.webp' %}" alt=""><div class="contact">
+        <div class="pra">
+        <img src="{% static 'shop/aks/svgexport-24.svg' %}" alt="">
+        <h4>993,000</h4>
+      </div>
+        <span>38%</span>
+      </div><h5>1,300,000</h5></div>
+      <div class="swiper-slide"><img src="./aks/sh6.webp" alt=""><div class="contact">
+        <div class="pra">
+        <img src="./aks/svgexport-24.svg" alt="">
+        <h4>100,000</h4>
+      </div>
+        <span>16%</span>
+      </div><h5>120,000</h5></div>
+      <div class="swiper-slide"><img src="./aks/sh7.webp" alt=""><div class="contact">
+        <div class="pra">
+        <img src="./aks/svgexport-24.svg" alt="">
+        <h4>148,000</h4>
+      </div>
+        <span>17%</span>
+      </div><h5>160,000</h5></div>
+      <div class="swiper-slide"><img src="./aks/sh8.webp" alt=""><div class="contact">
+        <div class="pra">
+        <img src="./aks/svgexport-24.svg" alt="">
+        <h4>3,750,000</h4>
+      </div>
+        <span>3%</span>
+      </div><h5>3,800,000</h5></div>
+      <div class="swiper-slide"><img src="./aks/sh9.webp" alt=""><div class="contact">
+        <div class="pra">
+        <img src="./aks/svgexport-24.svg" alt="">
+        <h4>239,000</h4>
+      </div>
+        <span>10%</span>
+      </div><h5>250,000</h5></div>
+      <div class="swiper-slide"><img src="./aks/sh10.webp" alt=""><div class="contact">
+        <div class="pra">
+        <img src="./aks/svgexport-24.svg" alt="">
+        <h4>71,000</h4>
+      </div>
+        <span>9%</span>
+      </div><h5>80,000</h5></div>
+      <div class="swiper-slide end">
+        <a href="#">
+        <img src="./aks/svgexport-26.svg" alt=""></a>
+        <h2>مشاهده همه</h2>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 7.2,
+      spaceBetween:   1,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <div class="sosh">
+   <a href="#">
+  <div class="soshe">
+    <img src="{% static 'shop/aks/svgexport-28.svg' %}" alt="">
+    <img src="{% static 'shop/aks/sabadsosh.webp' %}" alt="" class="img2">
+    <div class="sooo">تا 50% تخفیف</div>
+  </div>
+</a>
+    <div class="sosh1"><a href="#">
+       <img src="{% static 'shop/aks/mark1.webp" alt=""><div class="img">15%</div>
+       <img src="{% static 'shop/aks/mark2.webp" alt=""><div class="img2">13%</div>
+       <img src="{% static 'shop/aks/mark3.webp" alt=""><div class="img3">23%</div>
+       <img src="{% static 'shop/aks/mark4.webp" alt=""><div class="img4">14%</div>
+       <img src="{% static 'shop/aks/mark5.webp" alt=""><div class="img5">17%</div>
+       <img src="{% static 'shop/aks/markk6.jpg" alt=""><div class="img6">11%</div>
+      <div class="span"><p>بیش از 100 کالا</p>
+        <img src="{% static 'shop/aks/svgexport-30.svg" alt="">
+      </div>
+    </a>
+    </div></div>
+   <div class="chahar"><a href="#">
+    <img src="{% static 'shop/aks/chahar1.webp' %}" alt="">
+    <img src="{% static 'shop/aks/chahar2.webp' %}" alt="">
+    <img src="{% static 'shop/aks/chahar3.webp' %}" alt="">
+    <img src="{% static 'shop/aks/chahar4.webp' %}" alt=""></a>
+   </div>
+   <div class="sokhan"><h2> دسته  بندی  های  دیجیکالا</h2></div>
+    <div class="o"><a href="#">
+      <div class="oi1"><img src="{% static 'shop/aks/mobile.webp' %}" alt=""><p>موبایل</p></div>
+      <div class="oi2"><img src="{% static 'shop/aks/headphone.webp' %}" alt=""><p>کالای دیجیتال</p></div>
+      <div class="oi3"><img src="{% static 'shop/aks/ketri.webp' %}" alt=""><p>خانه و آشپزخانه</p></div>
+      <div class="oi4"><img src="{% static 'shop/aks/shoes.webp' %}" alt=""><p>مد وپوشاک</p></div>
+      <div class="oi5"><img src="{% static 'shop/aks/milk.webp' %}" alt=""><p>کالاهای سوپر مارکتی</p></div>
+      <div class="oi6"><img src="{% static 'shop/aks/book.webp' %}" alt=""><p>کتاب و لوازم التحریر</p></div>
+      <div class="oi7"><img src="{% static 'shop/aks/asbab.webp' %}" alt=""><p>اسباب بازی,کودک و نوزاد</p></div></a></div>
+    <div class="p"><a href="#">
+     <div class="po1"><img src="{% static 'shop/aks/atr.webp' %}" alt=""><p>زیبایی و سلامت</p></div>
+      <div class="po2"><img src="{% static 'shop/aks/sport.webp' %}" alt=""><p>ورزش و سفر</p></div>
+      <div class="po3"><img src="{% static 'shop/aks/aghar.webp' %}" alt=""><p>ابزار آلات و تجهیزات</p></div>
+      <div class="po4"><img src="{% static 'shop/aks/car.webp' %}" alt=""><p>خودرو و موتور سیکلت</p></div>
+      <div class="po5"><img src="{% static 'shop/aks/bag.webp' %}" alt=""><p>محصولات بومی و محلی</p></div>
+      <div class="po6"><img src="{% static 'shop/aks/card.webp' %}" alt=""><p>کارت هدیه</p></div></a>
+    </div>
+    <br><br>
+<div class="paeen"> <a href="#">
+  <img src="{% static 'shop/aks/paeen1.webp' %}" alt="">
+  <img src="{% static 'shop/aks/paeen2.webp' %}" alt=""></a>
+</div>
+<div class="pishn">
+  <h2> پیشنهاد دیجیکالا</h2>
+</div>
+<div class="wer">
+  <div class="wer2"><a href="#">
+   <div class="rew1"><img src="{% static 'shop/aks/wer1.webp' %}" alt=""> تجهیزات</div>
+   <div class="rew2"><img src="{% static 'shop/aks/wer2.webp' %}" alt="">چوب کار  </div>
+   <div class="rew3"><img src="{% static 'shop/aks/wer3.webp' %}" alt=""> موتور سیکلت</div>
+   <div class="rew4"><img src="{% static 'shop/aks/wer5.webp' %}" alt="">کنسول خانگی </div>
+   <div class="rew5"><img src="{% static 'shop/aks/wer6.webp' %}" alt="">جوراب مردانه </div>
+   <div class="rew6"><img src="{% static 'shop/aks/wer7.webp' %}" alt=""> هدفون , هدست و...</div>
+   <div class="rew7"><img src="{% static 'shop/aks/wer8.webp' %}" alt="">  گوشی موبایل</div>
+  </a></div>
+  <div class="wer3">
+    <div class="wer4"><a href="#">
+      <div class="rew8"><img src="{% static 'shop/aks/wer18.webp' %}" alt=""> اصلاح موی صورت</div>
+      <div class="rew9"><img src="{% static 'shop/aks/wer15.webp' %}" alt="">ساعت هوشمند</div>
+      <div class="rew10"><img src="{% static 'shop/aks/wer10.webp' %}" alt="">دفتر</div>
+      <div class="rew11"><img src="{% static 'shop/aks/wer12.jpg' %}" alt="">لپتاپ و الترابوک</div>
+      <div class="rew12"><img src="{% static 'shop/aks/wer16.webp' %}" alt="">کیفوکاورگوشی</div>
+      <div class="rew13"><img src="{% static 'shop/aks/wer17.webp' %}" alt=""> تبلت</div>
+      <div class="rew14"><img src="{% static 'shop/xaks/wer19.webp' %}" alt="">  اسپیکر ( بلندگو)</div>
+     </a></div>
+     </div>
+</div>
+   <br>
+   <div class="mah">
+    <div class="mah2"> <h2> محبوب ترین برند ها <img src="./aks/svgexport-43.svg" alt=""></h2></div>
+    <div class="mah3">
+    <a href="#"><img src="./aks/mah1.png" alt=""></a>
+    <a href="#"><img src="./aks/mah2.png" alt=""></a>
+    <a href="#"><img src="./aks/mah3.png" alt=""></a>
+    <a href="#"><img src="./aks/mah4.png" alt=""></a>
+    <a href="#"><img src="./aks/mah5.png" alt=""></a>
+    <a href="#"><img src="./aks/mah6.png" alt=""></a>
+    <a href="#"><img src="./aks/mah7.jpg" alt=""></a>
+    <a href="#"><img src="./aks/mah8.jpg" alt=""></a>
+    <a href="#"><img src="./aks/mah9.png" alt=""></a>
+  </div>
+   </div>
+   <div class="pmah">
+    <a href="#">
+    <img src="./aks/pm1.webp" alt="">
+    <img src="./aks/pm2.webp" alt=""></a>
+   </div>
+   <div class="grid">
+    <div class="grid2"> <h4>ساعت هوشمند</h4>
+    <p> بر اساس بازدید های شما</p>
+    <div class="grrr">
+      <a href="#">
+        <img src="./aks/grid1.jpg" alt="" class="gi1">
+      </a>
+      <a href="#">
+        <img src="./aks/grid2.jpg" alt="" class="gi2">
+      </a></div>
+      <div class="grr2">
+      <a href="#">
+        <img src="./aks/grid3jpg.jpg" alt="" class="gi3">
+      </a>
+      <a href="#">
+        <img src="./aks/grid4.jpg" alt="" class="gi4">
+      </a></div>
+      <a href="#"> مشاهده <img src="./aks/svgexport-31.svg" alt=""></a>
+    </div>
+    <div class="grid3">
+      <h4>هدفون , هدست و هنزفری</h4>
+      <p> بر اساس بازدید های شما</p>
+      <div class="gqw">
+        <a href="#">
+          <img src="./aks/grid5.jpg" alt="" class="gi5">
+        </a>
+        <a href="#">
+          <img src="./aks/grid6.jpg" alt="" class="gi6">
+        </a></div>
+        <div class="gqw2">
+        <a href="#">
+          <img src="./aks/grid7.jpg" alt="" class="gi7">
+        </a>
+        <a href="#">
+          <img src="./aks/grid8.jpg" alt="" class="gi8">
+        </a></div>
+        <a href="#"> مشاهده <img src="./aks/svgexport-31.svg" alt=""></a></div>
+    <div class="grid4">
+      <h4>کیف و کاور گوشی</h4>
+      <p> بر اساس بازدید های شما</p>
+      <div class="gqw3">
+        <a href="#">
+          <img src="./aks/grid9.jpg" alt="" class="gi9">
+        </a>
+        <a href="#">
+          <img src="./aks/grid10.jpg" alt="" class="gi10">
+        </a></div>
+        <div class="gqw4">
+        <a href="#">
+          <img src="./aks/grid11.jpg" alt="" class="gi11">
+        </a>
+        <a href="#">
+          <img src="./aks/grid12.jpg" alt="" class="gi12">
+        </a></div>
+        <a href="#"> مشاهده <img src="./aks/svgexport-31.svg" alt=""></a>
+    </div>
+    <div class="grid5">
+      <h4>گوشی موبایل</h4>
+      <p> بر اساس بازدید های شما</p>
+      <div class="gqw5">
+        <a href="#">
+          <img src="./aks/grid13.jpg" alt="" class="gi13">
+        </a>
+        <a href="#">
+          <img src="./aks/grid14.jpg" alt="" class="gi14">
+        </a></div>
+        <div class="gqw6">
+        <a href="#">
+          <img src="./aks/grid15.jpg" alt="" class="gi15">
+        </a>
+        <a href="#">
+          <img src="./aks/grid16.jpg" alt="" class="gi16">
+        </a></div>
+        <a href="#"> مشاهده <img src="./aks/svgexport-31.svg" alt=""></a>
+    </div>
+   </div>
+   <div class="plus">
+    <div class="plus2"> <div class="plu2">
+      <a href="#">مشاهده همه <img src="./aks/svgexport-49.svg" alt=""></a>
+      <div class="plu21"></div>
+      <h3> ارسال فوری رایگان <img src="./aks/svgexport-51.svg" alt=""></h3>
+    </div>
+  <div class="plu3">
+    <a href="#">
+    <img src="./aks/plu23.jpg" alt="" srcset="">
+    <img src="./aks/plu24.jpg" alt="" srcset="">
+    <img src="./aks/plu25.jpg" alt="" srcset=""></a>
+  </div>
+  <div class="plu4">
+    <a href="#">
+    <img src="./aks/plu27.jpg" alt="" srcset="">
+    <img src="./aks/plu26.jpg" alt="" srcset="">
+    <img src="./aks/plu28.jpg" alt="" srcset=""></a>
+  </div>
+</div>
+    <div class="plus3">
+      <div class="plu5">
+        <a href="#">مشاهده همه <img src="./aks/svgexport-49.svg" alt=""></a>
+        <div class="plu22"></div>
+        <h3> هدیه های نقدی<img src="./aks/svgexport-34.svg" alt=""></h3>
+      </div>
+    <div class="plu6">
+      <a href="#">
+      <img src="./aks/plu29.jpg" alt="" srcset="">
+
+      <img src="./aks/plu30.jpg" alt="" srcset="">
+      <img src="./aks/plu31.jpg" alt="" srcset=""></a>
+    </div>
+    <div class="cament"><span>هدیه</span>
+      <img src="./aks/svgexport-36.svg" alt="">
+      <p> 350,000</p>
+     </div>
+     <div class="cament2"><span>هدیه</span>
+      <img src="./aks/svgexport-36.svg" alt="">
+      <p> 298,000</p>
+     </div>
+     <div class="cament3"><span>هدیه</span>
+      <img src="./aks/svgexport-36.svg" alt="">
+      <p> 350,000</p>
+     </div>
+    <div class="plu7">
+      <a href="#">
+      <img src="./aks/plu32.jpg" alt="" srcset="">
+      <img src="./aks/plu33.jpg" alt="" srcset="">
+      <img src="./aks/plu34.jpg" alt="" srcset="">
+       </a>
+    </div>
+    </div>
+    <div class="plus4"> <div class="pplu">
+      <img src="./aks/pplu1.svg" alt="">
+      <h3>خدمات ویژه برای اعضای دیجی پلاس</h3>
+      <a href="#"><p> عضویت </p><img src="./aks/svgexport-31 (4).svg" alt="">
+        </a>
+    </div><div class="poposh"> <img src="./aks/dsdsds1.png" alt=""></div></div>
+   </div>
+   <div class="digib">
+    <div class="digib2">
+      <a href="#">
+      <div class="digib3"><img src="./aks/digib1.webp" alt=""> <p> جایزه ها</p>
+         <img src="./aks/svgexport-42 (1).svg" class="svg1" alt=""></div>
+      <div class="digib4"><img src="./aks/digib2.webp" alt=""> <p>ماموریت ها </p>
+        <img src="./aks/svgexport-41.svg" class="svg2" alt=""></div>
+      <div class="digib5"><img src="./aks/digib3.webp" alt=""> <p> چرخ و فلک</p>
+        <img src="./aks/svgexport-40 (1).svg" class="svg3" alt="">
+      </div>
+      <div class="digib6"></div>
+      <div class="digib7"><img src="./aks/svgexport-51 (1).svg" alt=""></div>
+    </a>
+    </div>
+   </div>
+   <div class="pdgb">
+    <div class="pdgb2"> <h4>آشنایی با فنون</h4>
+    <p> بر اساس بازدید های شما</p>
+    <div class="pdgb3">
+      <a href="#">
+        <img src="./aks/pd1.jpg" alt="" class="pd1">
+      </a>
+      <a href="#">
+        <img src="./aks/pd2.jpg" alt="" class="pd2">
+      </a></div>
+      <div class="pdgb4">
+      <a href="#">
+        <img src="./aks/pd3.jpg" alt="" class="pd3">
+      </a>
+      <a href="#">
+        <img src="./aks/pd4.jpg" alt="" class="pd4">
+      </a></div>
+      <a href="#"> مشاهده <img src="./aks/svgexport-31.svg" alt=""></a>
+    </div>
+    <div class="pdgb5">
+      <h4>سایر لوازم خودرو</h4>
+      <p> بر اساس بازدید های شما</p>
+      <div class="pdgb6">
+        <a href="#">
+          <img src="./aks/pd5.jpg" alt="" class="pd5">
+        </a>
+        <a href="#">
+          <img src="./aks/pd6.jpg" alt="" class="pd6">
+        </a></div>
+        <div class="gqwb">
+        <a href="#">
+          <img src="./aks/pd7.jpg" alt="" class="pd7">
+        </a>
+        <a href="#">
+          <img src="./aks/pd8.jpg" alt="" class="pd8">
+        </a></div>
+        <a href="#"> مشاهده <img src="./aks/svgexport-31.svg" alt=""></a></div>
+    <div class="pdgb7">
+      <h4>لپ تاپ و الترابوک</h4>
+      <p> بر اساس بازدید های شما</p>
+      <div class="pdgb8">
+        <a href="#">
+          <img src="./aks/pd9.jpg" alt="" class="pd9">
+        </a>
+        <a href="#">
+          <img src="./aks/pd10.jpg" alt="" class="pd10">
+        </a></div>
+        <div class="pdgb9">
+        <a href="#">
+          <img src="./aks/pd11.jpg" alt="" class="pd11">
+        </a>
+        <a href="#">
+          <img src="./aks/pd12.jpg" alt="" class="pd12">
+        </a></div>
+        <a href="#"> مشاهده <img src="./aks/svgexport-31.svg" alt=""></a>
+    </div>
+    <div class="pdgb10">
+      <h4> دفتر</h4>
+      <p> بر اساس بازدید های شما</p>
+      <div class="pdgb11">
+        <a href="#">
+          <img src="./aks/pd13.jpg" alt="" class="pd13">
+        </a>
+        <a href="#">
+          <img src="./aks/pd14.jpg" alt="" class="pd14">
+        </a></div>
+        <div class="pdgb12">
+        <a href="#">
+          <img src="./aks/pd15.jpg" alt="" class="pd15">
+        </a>
+        <a href="#">
+          <img src="./aks/pd16.jpg" alt="" class="pd16">
+        </a></div>
+        <a href="#"> مشاهده <img src="./aks/svgexport-31.svg" alt=""></a>
+    </div>
+   </div>
+<div class="posh">
+  <div class="shup"> <a href="#">مشاهده همه</a>
+    <div></div><div class="h2andi">
+    <h2>پر فروش ترین کالا ها <img src="./aks/svgexport-57.svg" alt=""></h2> </div>
+  </div>
+<div class="shce">
+  <div class="shce2">
+    <div class="ishem">
+    <img src="./aks/plu23.jpg" alt=""><h2>10</h2>
+  <p>
+    خودکار فوق روان نانو آنتی باکتریال پنتر مدل Dr.Pante</p>
+    </div>
+  <div class="ishem2">
+  <img src="./aks/plu28.jpg" alt="">
+  <h2>11</h2>
+  <p>فلویید ضد آفتاب مای مدل</p></div>
+<div class="ishem3">
+<img src="./aks/por3.webp" alt=""> <h2>12</h2>
+<p>
+  گوشی موبایل نوکیا مدل 106 2023 دو سیم‌ کارت
+  </p></div>
+</div>
+  <div class="shce3">
+  <div class="ishem4">
+    <img src="./aks/plu24.jpg" alt="">
+    <h2>7</h2>
+    <p>هنزفری بلوتوثی سی وای مدلT 13 TWS</p></div>
+  <div class="ishem5">
+  <img src="./aks/plu25.jpg" alt=""><h2>8</h2>
+  <p>گوشی موبایل شیامی مدل Redmi note 12 4g</p></div>
+<div class="ishem6">
+<img src="./aks/plu26.jpg" alt=""><h2>9</h2>
+<p>خوشبو کننده بدل مدل آدامس خرسی</p></div></div>
+  <div class="shce4">
+  <div class="ishem7">
+    <img src="./aks/plu27.jpg" alt=""><h2>4</h2>
+    <p>دستمال کاغذی 100 برگ بی تا بسته 10 عددی</p></div>
+<div class="ishem8">
+<img src="./aks/abee.webp" alt=""><h2>5</h2>
+<p>
+  کنسرو ماهی تون در روغن لادن - 180 گرم</p></div>
+<div class="ishem9">
+<img src="./aks/plu38.webp" alt=""><h2>6</h2>
+<p>پنیر دوشه هراز- 400 گرمی</p></div></div>
+
+<div class="shce5">
+  <div class="ishem10">
+    <img src="./aks/plu37.webp" alt=""><h2>1</h2>
+    <p> شامپو مولتی ویتامین مو گلرنگ</p>
+  </div>
+  <div class="ishem11">
+  <img src="./aks/plu36.webp" alt=""><h2>2</h2>
+  <p>روغن آفتاب گردان حاوی توکوفرول غنچه پلاس</p>
+</div>
+<div class="ishem12">
+<img src="./aks/plu35.webp" alt=""><h2>3</h2>
+<p>کنسرو رب گوجه فرنگی طبیعت</p>
+</div></div>
+</div>
+</div>
+<div class="abz">
+  <a href="#">
+    <img src="./aks/abz.webp" alt="">
+  </a>
+</div>
+<div class="monta">
+  <div class="moton"> <h2>منتخب محصولات تخفیف و حراج <img src="./aks/svgexport-42.svg" alt=""></h2></div>
+  <a href="#">
+    <div class="yek"><img src="./aks/mota2.webp" alt=""><div class="maye2">
+      <img src="./aks/svgexport-23 (1).svg" alt="">
+      <h4> 11,000</h4>
+     <span> 86%</span>
+   </div><h6 class="mah6">760,250</h6>
+      <img src="./aks/mota1.webp" alt=""><div class="maye">
+         <img src="./aks/svgexport-23 (1).svg" alt="">
+         <h4> 21,900</h4>
+        <span> 84%</span>
+      </div><h6>137,250</h6>
+      <img src="./aks/mota3.webp" alt=""><div class="maye3">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 1,292,000</h4>
+       <span> 12%</span>
+     </div><h6 class="mah62">1,470,000</h6>
+      <img src="./aks/mota4.webp" alt="">
+      <div class="maye4">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 90,400,000</h4>
+       <span> 13%</span>
+     </div><h6 class="mah63">104,000,000</h6>
+      <img src="./aks/mota5.webp" alt="">
+      <div class="maye5">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 73,400,000</h4>
+       <span> 12%</span>
+     </div><h6 class="mah64">84,000,000</h6>
+      <img src="./aks/mota6.webp" alt="">
+      <div class="maye6">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 73,400,000</h4>
+       <span> 12%</span>
+     </div><h6 class="mah65">84,000,000</h6>
+    </div>
+
+    <div class="do">
+      <img src="./aks/mota7.webp" alt="">
+      <div class="maye7">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 368,000</h4>
+       <span> 82%</span>
+     </div><h6 class="mah66">2,000,000</h6>
+     <img src="./aks/mota8.webp" alt="">
+     <div class="maye8">
+      <img src="./aks/svgexport-23 (1).svg" alt="">
+      <h4> 367,000</h4>
+     <span> 82%</span>
+   </div><h6 class="mah67">2,000,000</h6>
+     <img src="./aks/mota9.webp" alt="">
+     <div class="maye9">
+      <img src="./aks/svgexport-23 (1).svg" alt="">
+      <h4> 493,000</h4>
+     <span> 82%</span>
+   </div><h6 class="mah68">2,900,000</h6>
+     <img src="./aks/mota10.webp" alt="">
+     <div class="maye10">
+      <img src="./aks/svgexport-23 (1).svg" alt="">
+      <h4> 599,800</h4>
+     <span> 73%</span>
+   </div><h6 class="mah69">2,250,000</h6>
+     <img src="./aks/mota11.webp" alt="">
+     <div class="maye11">
+      <img src="./aks/svgexport-23 (1).svg" alt="">
+      <h4> 13,200</h4>
+     <span> 82%</span>
+   </div><h6 class="mah70">72,000</h6>
+     <img src="./aks/mota12.webp" alt="">
+     <div class="maye12">
+      <img src="./aks/svgexport-23 (1).svg" alt="">
+      <h4> 11,200</h4>
+     <span> 82%</span>
+   </div><h6 class="mah71">62,190</h6>
+    </div>
+    <div class="se">
+      <img src="./aks/mota13.webp" alt="">
+      <div class="maye13">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 1,720,000</h4>
+       <span> 18%</span>
+     </div><h6 class="mah72">2,100,000</h6>
+      <img src="./aks/mota14.webp" alt="">
+      <div class="maye14">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 999,990</h4>
+       <span> 64%</span>
+     </div><h6 class="mah73">2,800,000</h6>
+      <img src="./aks/mota15.webp" alt="">
+      <div class="maye15">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 999,990</h4>
+       <span> 64%</span>
+     </div><h6 class="mah74">2,800,000</h6>
+      <img src="./aks/mota16.webp" alt="">
+      <div class="maye16">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 899,000</h4>
+       <span> 63%</span>
+     </div><h6 class="mah75">2,460,000</h6>
+      <img src="./aks/mota17.webp" alt="">
+      <div class="maye17">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 122,200</h4>
+       <span> 62%</span>
+     </div><h6 class="mah76">320,000</h6>
+      <img src="./aks/mota18.webp" alt="">
+      <div class="maye18">
+        <img src="./aks/svgexport-23 (1).svg" alt="">
+        <h4> 139,000</h4>
+       <span> 60%</span>
+     </div><h6 class="mah77">350,000</h6>
+    </div>
+  </a>
+</div>
+<div class="khan">
+  <a href="#">
+    مشاهده بیشتر در دیجیکالا مگ
+    <img src="./aks/svgexport-31.svg" alt="">
+  </a>
+  <div></div>
+  <h3>خواندنی ها</h3>
+</div>
+<div class="pkhan">
+  <a href="#"><img src="./aks/pkhan6.jpg" alt="">
+  <div class="dkha">بررسی  هندزفری  بلوتوثی  تسکو  TH 5383;هدفون  دور  گردنی  استاندارد</div></a>
+  <a href="#"><img src="./aks/pkhan5.jpg" alt="">
+  <div class="dkha2">AMD  از دو کارت گرافیتRX7700 و RX7800 رونمایی کرد</div></a>
+  <a href="#"><img src="./aks/pkhan3.jpg" alt="">
+  <div class="dkha3">بررسی کارت خوان لکسار Multi-card;خوش ساخت و مناسب بیشتر کاربران</div></a>
+   <a href="#"><img src="./aks/pkhan4.jpg" alt="">
+    <div class="dkha4"> <p>معرفی 6 برنامه برای شخصی سازی کلیدهای کیبورد در کامپیوتر های مک </p></div></a>
+</div>
+
+<div class="poshti">
+  <div class="poshti2">
+    <img src="./aks/svgexport-45.svg" alt="">
+    <div></div>
+    <a href="#"> بازگشت به بالا <img src="./aks/svgexport-46.svg" alt=""></a>
+  </div>
+  <div class="poshti3">
+    <p>شماره پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</p>
+    <p class="psht">
+      ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p>
+  </div>
+  <div class="poshti4">
+    <a href="#"><img src="./aks/svgexport-61.svg" alt=""> <p>امکان پرداخت در محل</p></a>
+    <a href="#"><img src="./aks/svgexport-62.svg" alt=""> <p> 7 روز هفته، 24ساعته</p></a>
+    <a href="#"><img src="./aks/svgexport-63.svg" alt=""><p> هفت روز ضمانت بازگشت کالا</p></a>
+    <a href="#"><img src="./aks/poshti5.svg" alt=""><p>امکان تحویل اکسپرس</p></a>
+    <a href="#"><img src="./aks/svgexport-64.svg" alt=""><p>زمانت اصل بودن کالا</p></a>
+  </div>
+  <div class="poshti5">
+    <div class="poshti6"><h3>با دیجی‌ کالا</h3>
+      <a href="#">اتاق خبر دیجی‌ کالا</a>
+      <a href="#">فروش در دیجی‌کالا</a>
+      <a href="#">فرصت‌های شغلی</a>
+      <a href="#">گزارش تخلف در دیجی‌کالا</a>
+      <a href="#">تماس با دیجی‌کالا</a>
+      <a href="#">درباره دیجی‌کالا</a>
+    </div>
+    <div class="poshti7"><h3>خدمات مشتریان</h3>
+      <a href="#">پاسخ به پرسش های شما</a>
+      <a href="#">رویه بازگرداندن کالا </a>
+      <a href="#">شرایط استفاده</a>
+      <a href="#">حریم خصوصی</a>
+      <a href="#">گزاش بلاگ</a>
+    </div>
+    <div class="poshti8"><h3>راهنمای خرید از دیجی‌کالا</h3>
+      <a href="#">نحوه های ثیت سفارش</a>
+      <a href="#">رویه ارسال</a>
+      <a href="#">شیوه های پرداخت</a>
+    </div>
+    <div class="poshti9"><h3>همراه ما باشید!</h3>
+      <a href="#"><img src="./aks/svgexport-61 (1).svg" alt="">
+        <img src="./aks/svgexport-62 (1).svg " alt="">
+        <img src="./aks/svgexport-63 (1).svg" alt="">
+        <img src="./aks/svgexport-64 (1).svg" alt="">
+      </a>
+      <h3>
+        با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</h3>
+        <a href="#" class="emile">ایمیل شما</a>
+        <div class="paeenemile">
+          ثبت
+        </div>
+    </div>
+
+  </div>
+  <div class="abee">
+    <a href="#" class="more"><img src="./aks/More.svg" alt=""></a>
+    <a href="#"><img src="./aks/sib-app.svg" alt=""></a>
+    <a href="#"><img src="./aks/myket.svg" alt=""></a>
+    <a href="#"><img src="./aks/coffe-bazzar.svg" alt=""></a>
+    <div></div>
+    <h2>
+      دانلود اپلیکیشن دیجی‌کالا
+      </h2>
+      <img src="./aks/images.png" alt="">
+  </div>
+</div>
+   <div class="ykib">
+   <div class="ykib2">
+    <a href="#"> <img src="./aks/ybkh1.webp" alt=""></a>
+    <a href="#"> <img src="./aks/ybkh2.webp" alt=""></a>
+    <a href="#"> <img src="./aks/ybkh3.png" alt=""></a>
+  </div>
+   <div class="ykib3">
+    <h2>فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h2>
+    <p> یک خرید اینترنتی مطمِین , نیاز مند فروشگاهی
+      است که بتواند کالاهای متنوع ,با کیفیت و
+      دارای قیمت مناسب را در در مدت زمانی مناسب به
+       دست مشتریان خود برساند و ظمانت بازگشت کالا هم داشته باشد;
+       ویژگی هایی که فروشگاه اینترنتی دیجی کالا سال هاست یر روی
+        آنها کار کرده و توتنسته از این طریق مشتریان ثابت خود را داشته باشد.</p>
+        <a href="#">مشاهده بیشتر <img src="./aks/svgexport-31.svg" alt=""></a>
+   </div>
+</div>
+<div class="nemi">
+  <p>برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و
+    ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت
+    .نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است</p>
+</div>
+<div class="akharinn1"><div class="ak">
+  <a href="#"> <img src="./aks/svgexport-58.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-59.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-60.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-61 (2).svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-62 (2).svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-63 (2).svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-64 (2).svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-65.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-65.svg" alt=""></a></div>
+  <div>
+  <a href="#"> <img src="./aks/svgexport-66.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-67.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-68.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-69.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-70.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-71.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-72.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-73.svg" alt=""></a>
+  <a href="#"> <img src="./aks/svgexport-74.svg" alt=""></a>
+  </div>
+</div>
 </html>
