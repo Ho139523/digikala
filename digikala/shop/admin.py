@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import category_model, customer_model
+from .models import Category_model, Customer_model
 
 # Register your models here.
-admin.site.register(category_model)
-admin.site.register(customer_model)
+admin.site.register(Category_model)
+admin.site.register(Customer_model)

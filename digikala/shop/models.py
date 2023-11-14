@@ -13,7 +13,7 @@ class Category_model(models.Model):
 
     def __str__(self):
         return self.name
-    
+
 
 
 class Customer_model(models.Model):
@@ -30,7 +30,7 @@ class Customer_model(models.Model):
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
-    
+
 
 
 class Product_model(models.Model):
@@ -38,7 +38,7 @@ class Product_model(models.Model):
     slug=models.SlugField(max_length=200, verbose_name='آدرس کالا')
     description=models.TextField(max_length=2000000, verbose_name='جزییات')
     price=models.DecimalField(default=0, decimal_places=0, blank=True, max_digits=12, verbose_name='قیمت محصول')
-    category=models.ForeignKey(category_model, on_delete=models.CASCADE, verbose_name='دسته‌بندی')
+    category=models.ForeignKey(Category_model, on_delete=models.CASCADE, verbose_name='دسته‌بندی')
     picture=models.ImageField(upload_to='product/', verbose_name='تصویر محصول')
 
 
@@ -57,8 +57,8 @@ class Order_model(models.Model):
     date=models.DateTimeField(default=timezone.now, verbose_name='تاریخ سفارش')
     slug=models.SlugField(max_length=200, verbose_name='آدرس سفارش‌')
     status=models.CharField(max_length=1, choices=STATUS_CHOICES, default='u', verbose_name="وضعیت سفارش")
-    quantity=models.IntegerField(max_digits=2, default=1, verbose_name='تعداد')
-    
+    quantity=models.IntegerField(default=1, verbose_name='تعداد')
+
 
     class Meta:
         verbose_name='سفارش'
